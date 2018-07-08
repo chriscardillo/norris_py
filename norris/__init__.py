@@ -16,7 +16,7 @@ def get_numbered_joke(n):
         return numbered_joke.json()['value']['joke']
 
     else:
-        print('That joke number is unavailable.')
+        return 'That joke number is unavailable.'
 
 def get_multiple_randos(n):
     assert type(n) == int, 'n is not type int'
